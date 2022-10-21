@@ -22,4 +22,6 @@
 
 Use "npm run dev" in the command line to start the app.
 
+![](/screenshots/ships_page.PNG)
+
 Images stored inside arrays in separate files -> public/ships and public/vehicles
