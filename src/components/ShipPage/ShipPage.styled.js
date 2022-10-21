@@ -27,7 +27,7 @@ export const Container = styled.div`
       "List        List       List        List      "
       "List        List       List        List      "
       "List        List       List        List      "
-      ".           NavButtons NavButtons  .         ";
+      "NavButtons  NavButtons NavButtons  NavButtons";
   }
 `;
 
@@ -144,6 +144,7 @@ export const List = styled.ul`
 
 //blue -> #181e2b
 export const ListItem = styled.div`
+  display: grid;
   width: 90cqi;
   min-height: 40cqi;
   container-type: inline-container;
@@ -161,8 +162,9 @@ export const ListItem = styled.div`
 `;
 
 export const Thumbnail = styled.img`
-  width: 35cqi;
-  justify-self: center;
+  max-width: 35cqi;
+  height: 20cqi;
+  margin: auto;
 `;
 
 export const MainText = styled.p`
@@ -233,7 +235,7 @@ export const Next = styled.button`
 export const PageNumber = styled.span`
   font-family: Bahnschrift;
   margin: 40px;
-  font-size: 4cqi;
+  font-size: 7cqi;
 
   @media (min-width: 1500px) {
     font-size: 3cqi;

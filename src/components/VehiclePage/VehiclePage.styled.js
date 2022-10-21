@@ -24,7 +24,7 @@ export const Container = styled.div`
       "Image       Image      Image       Image     "
       "  .         LeftButton RightButton   .       "
       "List        List       List        List      "
-      ".           NavButtons NavButtons  .         ";
+      "NavButtons  NavButtons NavButtons  NavButtons";
   }
 `;
 
@@ -114,8 +114,9 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.div`
+  display: grid;
   width: 90cqi;
-  min-height: 40cqi;
+  min-height: 50cqi;
   margin: 0;
 
   font-family: Bahnschrift;
@@ -132,7 +133,13 @@ export const ListItem = styled.div`
 `;
 
 export const Thumbnail = styled.img`
-  width: 100%;
+  height: 20cqi;
+  max-width: 45cqi;
+  justify-self: center;
+
+  @media (min-width: 1500px) {
+    max-width: 45cqi;
+  }
 `;
 
 export const MainText = styled.p`
@@ -156,16 +163,20 @@ export const Text = styled.p`
 export const NavButtons = styled.span`
   grid-area: NavButtons;
   width: fit-content;
-  margin: 100px 0;
+  margin: 20px 0;
 
   justify-self: center;
 
   background-color: ${colors.dark};
+
+  @media (min-width: 1500px) {
+    margin: 100px 0;
+  }
 `;
 
 export const Previous = styled.button`
   font-family: Bahnschrift;
-  font-size: 4cqi;
+  font-size: 7cqi;
   background-color: ${colors.light};
   color: ${colors.dark};
   cursor: pointer;
@@ -182,7 +193,7 @@ export const Previous = styled.button`
 
 export const Next = styled.button`
   font-family: Bahnschrift;
-  font-size: 4cqi;
+  font-size: 7cqi;
   background-color: ${colors.light};
   color: ${colors.dark};
   cursor: pointer;
@@ -199,7 +210,7 @@ export const Next = styled.button`
 
 export const PageNumber = styled.span`
   font-family: Bahnschrift;
-  font-size: 4cqi;
+  font-size: 7cqi;
   margin: 0 20px;
 
   @media (min-width: 1500px) {
