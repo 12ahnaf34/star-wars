@@ -4,6 +4,8 @@
 - CSS done using styled components
 - Data retrieved from SWAPI (Star Wars API)
 
+![](/screenshots/landing_page.PNG)
+
 # Vite ⚡
 
 > Next Generation Frontend Tooling
@@ -19,3 +21,7 @@
 # Run on Local Machine
 
 Use "npm run dev" in the command line to start the app.
+
+![](/screenshots/ships.PNG)
+
+Images stored inside arrays in separate files -> public/ships and public/vehicles
