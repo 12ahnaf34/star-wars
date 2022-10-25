@@ -1,6 +1,6 @@
 # Star Wars
-## Video - https://www.youtube.com/watch?v=UxzYZzb2Z2I
-## Site - https://star-wars-15424c.netlify.app/
+#### Video - https://www.youtube.com/watch?v=UxzYZzb2Z2I
+#### Site - https://star-wars-15424c.netlify.app/
 
 - React app made using Vite 
 - CSS done using styled components
